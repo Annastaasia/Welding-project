@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Argon_Service_Viseu</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./mainpage/styles/mainpage.css">
+    <link rel="stylesheet" href="./connection/styles/connection.css">
 </head>
 <body>
     <header>
@@ -17,12 +23,35 @@
                     <li><a class="header__menu__nav__aboutme" href="#">Обо мне</a></li>
                     <li><a class="header__menu__nav__service" href="#">Услуги</a></li>
                     <li><a class="header__menu__nav__galary" href="#">Галерея</a></li>
-                    <li><a class="header__menu__nav__reviews" href="#">Отзовы</a></li>
+                    <li><a class="header__menu__nav__reviews" href="#">Отзывы</a></li>
                     <li><a class="header__menu__nav__form" href="#">Оставить заявку</a></li>
                     <li><a class="header__menu__nav__connection" href="#">Контакты</a></li>
                 </ul>  
             </nav>
         </div>
     </header>
-    
+    <section>
+        <div class="mainpage">
+            <h1 class="mainpage__h1">СВАРКА АРГОНОМ В Г. ВИЗЕУ</h1>
+            <p class="mainpage__text">Осуществление аргоновой дуговой сварки</p>
+            <p class="mainpage__number">+351-920-139-641</p>
+            <button class="mainpage__button">ОСТАВИТЬ ЗАЯВКУ</button>
+        </div>
+    </section>
+    <section>
+        <div class="connection">
+            <h2 class="connection__h2">ОСТАВИТЬ ЗАЯВКУ</h2> 
+            <form class="connection__container">
+                <input type="text" placeholder="Имя" class="connection__form1">
+                <input type="tel" maxlength="12" placeholder="Номер телефона" class="connection__form2">
+                <input type="email" placeholder="E-mail" class="connection__form3">
+                <input type="textarea" placeholder="Введите сообщение" class="connection__form4">
+                <img src="./connection/images/form.png" alt="" class="connection__formimage">
+            </form>
+            <div class="connection__container2"><button class="connection__button">ОТПРАВИТЬ</button>
+            <input type="checkbox" value="" class="connection__checkbox">
+            <p class="connection__checkboxtext">Я соглашаюсь с использованием моих Персональных данных</p>
+            </div>
+        </div>
+    </section>
 </body>

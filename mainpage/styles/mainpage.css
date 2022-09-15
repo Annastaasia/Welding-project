@@ -1,0 +1,32 @@
+.mainpage{
+    width:98.7vw;
+    height:600px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color:white;
+    background-image: url("../images/fon.png");
+}
+.mainpage__h1{
+    padding-top:9%;
+    font-size: 64px;
+}
+.mainpage__text{
+    margin-top: -20px;
+    font-size:29px;
+    font-weight: 200;
+}
+.mainpage__number{
+    font-size: 38px;
+    font-weight: 600;
+}
+.mainpage__button{
+    margin-top: 2%;
+    width:350px;
+    height:70px;
+    font-size: 24px;
+    font-weight: 600;
+    color:white;
+    background-color: #004D61;
+    border-width: 0px;
+    border-radius: 12px;
+}
