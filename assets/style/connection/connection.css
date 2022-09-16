@@ -64,13 +64,15 @@
     font-weight: 600;
     border-width: 0px;
     border-radius: 12px;
-    background-color: #004D61;
-  }
-  .connection__button:hover{
-    color:black;
-    border-color: #7c7c7c;
-  background: linear-gradient(top, rgba(38, 38, 38, 0.8), #e6e6e6 25%, #ffffff 38%, #c5c5c5 63%, #f7f7f7 87%, rgba(38, 38, 38, 0.8));
-  background: -webkit-linear-gradient(top, rgba(38, 38, 38, 0.5), #e6e6e6 25%, #ffffff 38%, rgba(0, 0, 0, 0.25) 63%, #e6e6e6 87%, rgba(38, 38, 38, 0.4));
+    background:#004D61
+    linear-gradient(-45deg, transparent calc(100%/3), rgba(244, 242, 242, 0.5), transparent calc(200%/3)) 
+    bottom right/350% 100% no-repeat;
+    transition: 0.5s linear;
+    cursor:pointer;
+    text-align:center;
+}
+.connection__button:hover{
+    background-position: bottom left;
   }
   
 .connection__container2{
