@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/style/connection/connection.css">
     <link rel="stylesheet" href="./assets/style/header/header.css">
     <link rel="stylesheet" href="./assets/style/about_me/about_me.css">
+    <link rel="stylesheet" href="./assets/style/gallery/gallery.css">
 </head>
 <body>
     <header>
@@ -50,19 +51,28 @@
         </div>
     </section>
     <section>
+        <div class="gallery">
+            <h2 class="gallery__h2">ГАЛЕРЕЯ</h2>
+        </div>
+    </section>
+    <section>
         <div class="connection">
             <h2 class="connection__h2" >ОСТАВИТЬ ЗАЯВКУ</h2> 
-            <form class="connection__container" id="connection" enctype="multipart/form-data" method="post">
+            <form  id="connection" enctype="multipart/form-data" method="post">
+                <div class="connection__container">
                 <input type="text" placeholder="Имя" name="name" class="connection__form1" required pattern="[А-Яа-яЁё]+$">
                 <input type="tel" maxlength="12" name="tel" placeholder="Номер телефона" class="connection__form2" required pattern="[ 0-9]+$">
                 <input type="email" placeholder="E-mail" name="email" class="connection__form3">
                 <input type="textarea" placeholder="Введите сообщение" class="connection__form4" required>
                 <img src="./assets/image/connection/form.png" alt="" class="connection__formimage">
+                </div>
+                <div class="connection__container2">
+                    <input type="submit" value="Отправить" class="connection__button">
+                    <input type="checkbox" value="" class="connection__checkbox">
+                    <p class="connection__checkboxtext">Я соглашаюсь с использованием моих Персональных данных</p>
+                </div>
             </form>
-            <div class="connection__container2"><button class="connection__button">ОТПРАВИТЬ</button>
-            <input type="checkbox" value="" class="connection__checkbox">
-            <p class="connection__checkboxtext">Я соглашаюсь с использованием моих Персональных данных</p>
-            </div>
+           
         </div>
     </section>
 </main>
