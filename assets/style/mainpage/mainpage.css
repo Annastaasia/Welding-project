@@ -1,10 +1,10 @@
 .mainpage{
+    background-image: url("../../image/mainpage/fon.png");
     width:98.7vw;
     height:600px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     color:white;
-    background-image: url("../images/fon.png");
 }
 .mainpage__h1{
     padding-top:9%;
