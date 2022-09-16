@@ -74,7 +74,7 @@
 .connection__button:hover{
     background-position: bottom left;
   }
-
+  
 .connection__container2{
     display:grid;
     grid-template-columns: 26vw 3vw 10vw;
