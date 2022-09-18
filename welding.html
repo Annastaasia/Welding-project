@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./assets/style/header/header.css">
     <link rel="stylesheet" href="./assets/style/about_me/about_me.css">
     <link rel="stylesheet" href="./assets/style/gallery/gallery.css">
+    <link rel="stylesheet" href="./assets/style/footer/footer.css">
 </head>
 <body>
     <header>
@@ -36,14 +37,14 @@
     </header>
     <main>
     <section>
-        <div class="mainpage">
+        <div class="mainpage" id="mainpage">
             <h1 class="mainpage__h1">СВАРКА АРГОНОМ В Г. ВИЗЕУ</h1>
             <p class="mainpage__text">Осуществление аргоновой дуговой сварки</p>
             <p class="mainpage__number">+351-920-139-641</p>
             <a href="#connection"><button class="mainpage__button">ОСТАВИТЬ ЗАЯВКУ</button></a>
         </div>
     </section>
-    <section class="about-me">
+    <section class="about-me" id="aboutme">
         <div class="about-me__h1">ОБО МНЕ</div>
         <div class="about-me__block">
             <div class="about-me__photo"><img alt="retrato" src="./assets/image/about_me/retrato.jpeg"></div>
@@ -108,7 +109,7 @@
     </section>
     <section>
         <div class="gallery">
-            <h2 class="gallery__h2">ГАЛЕРЕЯ</h2>
+            <h2 class="gallery__h2" id="gallery">ГАЛЕРЕЯ</h2>
             <div class="gallery__container">
                 <video class="gallery__containeritem1"controls> <source src="./assets/image/gallery/1video.MOV" ></video>
                 <img src="./assets/image/gallery/6.jpg" alt="" class="gallery__containeritem2">
@@ -122,7 +123,7 @@
         </div>
     </section>
     <section>
-        <div class="connection">
+        <div class="connection" id="connection">
             <h2 class="connection__h2" >ОСТАВИТЬ ЗАЯВКУ</h2> 
             <form  id="connection" enctype="multipart/form-data" method="post">
                 <div class="connection__container">
@@ -142,4 +143,27 @@
         </div>
     </section>
 </main>
+<footer>
+    <div class="footer">
+        <div class="footer__container1">
+            <img src="./assets/image/footer/logo.png" alt="" class="footer__container1__item1">
+            <a href="#mainpage" class="footer__container1__item2">Главная</a>
+            <a href="#aboutme" class="footer__container1__item3">Обо мне</a>
+            <a href="#"  class="footer__container1__item4">Услуги</a>
+            <a href="#gallery" class="footer__container1__item5">Галерея</a>
+            <a href="#" class="footer__container1__item6">Отзывы</a>
+            <a href="#" class="footer__container1__item7">Контакты</a>
+        </div>
+        <div class="footer__container2">
+            <p class="footer__container2__item1">+351-920-139-641</p>
+            <img src="./assets/image/footer/icon1.png" alt="" class="footer__container2__item2">
+            <img src="./assets/image/footer/icon2.png" alt="" class="footer__container2__item3">
+            <img src="./assets/image/footer/icon3.png" alt="" class="footer__container2__item4">
+        </div>
+        <div class="footer__container3">
+            <p class="footer__container3__item1">2022.</p>
+            <p class="footer__container3__item22">Все права защищены.</p>
+        </div>
+    </div>
+</footer>
 </body>
