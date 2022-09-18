@@ -1,6 +1,10 @@
 .about-me {
-  padding: 50px;
+  padding: 7%;
   font-family: "Montserrat";
+  background: url(../../image/about_me/welding_fon.svg) 40% no-repeat;
+  background-size: contain;
+  background-position-x: 57%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .about-me__h1 {
   text-align: center;
@@ -15,9 +19,8 @@
   grid-template-columns: 1fr 1fr;
 }
 .about-me__block .about-me__photo img {
-  padding: 10%;
-  width: 454px;
-  height: 470px;
+  width: 32vw;
+  height: 60vh;
 }
 .about-me__block .about-me__text {
   padding: 10%;
