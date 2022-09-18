@@ -3,7 +3,8 @@
     margin-top: 20%;
     width: 100%;
     height: 400px;
-    background-color: #004D61;
+    background-image:url("../../image/footer/fon.png");
+    background-size: 100vw;
     color:white;
     display: flex;
 }
