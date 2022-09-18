@@ -4,6 +4,7 @@
   grid-template-columns: 1fr 3fr 1fr;
   align-items: center;
   width: 100%;
+  height: 25%;
   font-family: 'Montserrat', sans-serif;
   line-height: 18px;
   background-color:rgba(0, 0, 0, 0.851);
