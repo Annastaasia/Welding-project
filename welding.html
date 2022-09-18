@@ -137,7 +137,7 @@
                 <img src="./assets/image/connection/form.png" alt="" class="connection__formimage">
                 </div>
                 <div class="connection__container2">
-                    <input type="submit" value="Отправить" class="connection__button">
+                    <input type="submit" value="ОТПРАВИТЬ" class="connection__button">
                     <input type="checkbox" required value="true" class="connection__checkbox">
                     <p class="connection__checkboxtext">Я соглашаюсь с использованием моих Персональных данных</p>
                 </div>
@@ -147,7 +147,7 @@
     </section>
 </main>
 <footer>
-    <div class="footer">
+    <div class="footer" id="footer">
         <div class="footer__container1">
             <img src="./assets/image/footer/logo.png" alt="" class="footer__container1__item1">
             <a href="#mainpage" class="footer__container1__item2">Главная</a>
@@ -169,4 +169,15 @@
         </div>
     </div>
 </footer>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    $("#footer").on("click","a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+    top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
+    });
+  });
+  </script>
 </body>
