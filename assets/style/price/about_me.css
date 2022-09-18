@@ -19,8 +19,8 @@
   grid-template-columns: 1fr 1fr;
 }
 .about-me__block .about-me__photo img {
-  width: 32vw;
-  height: 60vh;
+  width: 10%;
+  height: 10%;
 }
 .about-me__block .about-me__text {
   padding: 10%;
