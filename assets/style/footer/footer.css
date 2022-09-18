@@ -60,8 +60,7 @@
     display: grid;
     grid-template-columns: repeat(4,30%);
     grid-template-rows: 10% 10%;
-    column-gap: 10px;
-    row-gap: 20px;
+    row-gap: 10px;
 }
 .footer__container2__item1{
     grid-row:1/2;
