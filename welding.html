@@ -126,7 +126,7 @@
             <h2 class="connection__h2" >ОСТАВИТЬ ЗАЯВКУ</h2> 
             <form  id="connection" enctype="multipart/form-data" method="post">
                 <div class="connection__container">
-                <input type="text" placeholder="Имя" name="name" class="connection__form1" required pattern="[А-Яа-яЁё]+$">
+                <input type="text" placeholder="Имя" name="name" class="connection__form1" minlength="2" maxlength="30" required pattern="[a-zA-Z]+$">
                 <input type="tel" maxlength="12" name="tel" placeholder="Номер телефона" class="connection__form2" required pattern="[ 0-9]+$">
                 <input type="email" placeholder="E-mail" name="email" class="connection__form3">
                 <input type="textarea" placeholder="Введите сообщение" class="connection__form4" required>
@@ -134,7 +134,7 @@
                 </div>
                 <div class="connection__container2">
                     <input type="submit" value="Отправить" class="connection__button">
-                    <input type="checkbox" value="" class="connection__checkbox">
+                    <input type="checkbox" required value="true" class="connection__checkbox">
                     <p class="connection__checkboxtext">Я соглашаюсь с использованием моих Персональных данных</p>
                 </div>
             </form>
