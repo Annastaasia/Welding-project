@@ -17,20 +17,20 @@
     <link rel="stylesheet" href="./assets/style/gallery/gallery.css">
     <link rel="stylesheet" href="./assets/style/footer/footer.css">
     <link rel="stylesheet" href="./assets/style/price/price.css">
+    
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="header__menu">
             <div class="header__menu__logo"><img alt="logo" src="./assets/image/header/logo.png"></div>
             <nav class="header__menu__nav">
                 <ul>
-                    <li><a class="header__menu__nav__main" href="#">Главная</a></li>
-                    <li><a class="header__menu__nav__aboutme" href="#">Обо мне</a></li>
+                    <li><a class="header__menu__nav__main" href="#mainpage">Главная</a></li>
+                    <li><a class="header__menu__nav__aboutme" href="#aboutme">Обо мне</a></li>
                     <li><a class="header__menu__nav__service" href="#">Услуги</a></li>
-                    <li><a class="header__menu__nav__galary" href="#">Галерея</a></li>
-                    <li><a class="header__menu__nav__reviews" href="#">Отзывы</a></li>
-                    <li><a class="header__menu__nav__form" href="#">Оставить заявку</a></li>
-                    <li><a class="header__menu__nav__connection" href="#">Контакты</a></li>
+                    <li><a class="header__menu__nav__galary" href="#gallery">Галерея</a></li>
+                    <li><a class="header__menu__nav__form" href="#connection">Оставить заявку</a></li>
+                    <li><a class="header__menu__nav__connection" href="#contact">Контакты</a></li>
                 </ul>  
             </nav>
             <button class="header__button"><img alt="whats_app" src="./assets/image/header/whatsapp.svg"></img>Whats App</button>
@@ -146,6 +146,19 @@
            
         </div>
     </section>
+
+    <section id="contact">
+        <div class="contact">
+            <h2 class="contact__h2">Контакты</h2>
+            <iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.7142782933292!2d-7.915136399999999!3d40.6582283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd23375c4a1a5193%3A0xe88327e28ec9d99a!2sArgon%20Service%20Viseu!5e0!3m2!1sru!2sru!4v1663589664736!5m2!1sru!2sru" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contact__track">
+            <p>Как до нас добраться:</p>
+            <p>3510-024 Viseu, Португалия</p>
+            <p>(!)Описание проезда</p>
+            <p>Посещение мастерской по предварительной договоренности</p>
+        </div>
+        </div>
+    </section>
 </main>
 <footer>
     <div class="footer" id="footer">
@@ -173,7 +186,7 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
-    $("#footer, #mainpage").on("click","a", function (event) {
+    $("#footer, #header").on("click","a", function (event) {
     event.preventDefault();
     var id = $(this).attr('href'),
     top = $(id).offset().top;
