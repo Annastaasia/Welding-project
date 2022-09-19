@@ -1,9 +1,9 @@
 .about-me {
-  padding: 7%;
+  padding: 0px 7% 0px 7%;
   font-family: "Montserrat";
-  background: url(../../image/about_me/welding_fon.svg) 40% no-repeat;
+  background: url(../../image/about_me/welding_fon.svg) no-repeat;
   background-size: contain;
-  background-position-x: 57%;
+  background-position-x: 53%;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .about-me__h1 {
@@ -30,4 +30,6 @@
   text-align: left;
   letter-spacing: 0.01em;
   color: #000000;
-}/*# sourceMappingURL=about_me.css.map */
+}
+
+/*# sourceMappingURL=about_me.css.map */
