@@ -1,5 +1,8 @@
 .price {
   font-family: "Montserrat";
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
 .price h2 {
   font-style: normal;
@@ -41,6 +44,7 @@
 }
 .price .price__button {
   display: grid;
+  margin-top: 2%;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr ;
   align-items: center;
