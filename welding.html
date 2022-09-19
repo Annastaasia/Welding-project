@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./assets/style/about_me/about_me.css">
     <link rel="stylesheet" href="./assets/style/gallery/gallery.css">
     <link rel="stylesheet" href="./assets/style/footer/footer.css">
+    <link rel="stylesheet" href="./assets/style/price/price.css">
 </head>
 <body>
     <header>
@@ -56,59 +57,59 @@
     <section class="price">
         <h2>УСЛУГИ</h2>
         <div class="price__list">
-            <div class="price__services1">
+            <div class="price__services">
                 <div class="price__name">Аргоновая сварка металлов
-                    (Алюминий, салюмин, титан, медь и ее сплавы, латунь, нержавейки) 
+                    <div class="price__litletext">(Алюминий, салюмин, титан, медь и ее сплавы, латунь, нержавейки) </div>
                 </div>
                 <div class="price__value">от 500 рублей</div>
             </div>
-            <div class="price__services2">
+            <div class="price__services">
                 <div class="price__name">Сварка и ремонт промышленных баков</div>
                 <div class="price__value">от 500 рублей
                 </div>
             </div>
-            <div class="price__services3"> 
+            <div class="price__services"> 
                 <div class="price__name">Сварка и ремонт топливных баков</div>
                 <div class="price__value">от 500 рублей</div>
             </div>
-            <div class="price__services4">
+            <div class="price__services">
                 <div class="price__name">Сварка трубок кондиционера</div>
                 <div class="price__value">от 500 рублей</div>
             </div>
-            <div class="price__services5">
+            <div class="price__services">
                 <div class="price__name">Сварка дисков</div>
                 <div class="price__value">от 500 рублей</div>
             </div>
-            <div class="price__services6">
+            <div class="price__services">
                 <div class="price__name">Сварка интеркулера</div>
                 <div class="price__value">от 500 рублей</div>
             </div>  
-            <div class="price__services7">
+            <div class="price__services">
                 <div class="price__name">Сварка поддона картера</div>
                 <div class="price__value">от 500 рублей</div>
             </div>
-            <div class="price__services8">
+            <div class="price__services">
                 <div class="price__name">Сварка катера, лодок</div>
                 <div class="price__value">от 500 рублей</div>
             </div>
-            <div class="price__services9">
+            <div class="price__services">
                 <div class="price__name">Сварка головки блока цилиндров ГБЦ</div>
                 <div class="price__value">от 500 рублей</div>
             </div>
-            <div class="price__services10">
+            <div class="price__services">
                 <div class="price__name">Сварка труб</div>
                 <div class="price__value">от 500 рублей</div>
             </div>
-            <div class="price__services11"> 
+            <div class="price__services"> 
                 <div class="price__name">Ремонт цистерн, автоцистерн и иных ёмкостей</div>
                 <div class="price__value">от 500 рублей</div>
             </div>
-            <div class="price__services12">
+            <div class="price__services">
                 <div class="price__name">Сварочный ремонт сельскохозяйсвтенной техники</div>
                 <div class="price__value">от 500 рублей</div>
             </div>
         </div>
-        <button class="price__button"><img alt="whats_app" src="./assets/image/header/whatsapp.svg"></img>Whats App</button>
+        <button class="price__button"><img class="price__whatapp" alt="whats_app" src="./assets/image/header/whatsapp.svg"></img>Whats App</button>
     </section>
     <section>
         <div class="gallery">
@@ -133,7 +134,7 @@
                 <input type="text" placeholder="Имя" name="name" class="connection__form1" minlength="2" maxlength="30" required pattern="[a-zA-Z]+$">
                 <input type="tel" maxlength="12" name="tel" placeholder="Номер телефона" class="connection__form2" required pattern="[ 0-9]+$">
                 <input type="email" placeholder="E-mail" name="email" class="connection__form3">
-                <input type="textarea" placeholder="Введите сообщение" class="connection__form4" required>
+                <input type="textarea" placeholder="Введите сообщение" name="comment" class="connection__form4" required>
                 <img src="./assets/image/connection/form.png" alt="" class="connection__formimage">
                 </div>
                 <div class="connection__container2">
@@ -180,4 +181,6 @@
     });
   });
   </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assets/script/script.js"></script>
 </body>

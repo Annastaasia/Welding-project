@@ -1,0 +1,60 @@
+.price
+    font-family:"Montserrat"
+    h2
+        font-style: normal
+        font-weight: 700
+        font-size: 64px
+        line-height: 96px     
+        text-align: center
+        letter-spacing: 0.01em
+
+        color: #000000
+    &__list
+        display: grid
+        padding: 0px 7% 0px 7%
+        grid-template-rows: repeat( 12, 1fr)
+        font-style: normal
+        font-weight: 400
+        font-size: 29px
+        line-height: 28px
+        letter-spacing: 0.01em
+        
+        .price__services
+            display: grid
+            grid-template-columns: 70% 30%
+            border-bottom: 0.5px solid rgba(0, 77, 97, 0.45)
+            .price__name
+                align-self: center
+                .price__litletext
+                    font-size: 20px
+            .price__value
+                align-self: center
+                justify-self: right
+                font-weight: 700
+                font-size: 32px
+                line-height: 31px
+                color: #004D61
+    .price__button
+        align-items: center
+        justify-items: center
+        width: 230px
+        height: 70px
+        font-size: 24px
+        font-weight: 600
+        color: white
+        border-width: 0px
+        border-radius: 12px
+        background:#004D61
+        linear-gradient(-45deg transparent calc 100%/2 rgba (244, 242, 242, 0.5) transparent calc 200%/3 
+        bottom right/350% 100% no-repeat
+        transition: 0.5s linear
+        cursor: pointer
+        text-align: center
+        .price__whatapp
+            padding: 2%
+
+    &__button:hover 
+        background-position: bottom left
+    
+
+
