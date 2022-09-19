@@ -4,7 +4,6 @@
   background: url(../../image/about_me/welding_fon.svg) no-repeat;
   background-size: contain;
   background-position-x: 53%;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .about-me__h1 {
   text-align: center;
@@ -19,13 +18,14 @@
   grid-template-columns: 1fr 1fr;
 }
 .about-me__block .about-me__photo img {
-  width: 32vw;
-  height: 60vh;
+  max-width: 32vw;
+  max-height: 60vh;
+  
 }
 .about-me__block .about-me__text {
   padding: 10%;
   font-weight: 400;
-  font-size: 29px;
+  font-size: 170%;
   line-height: 28px;
   text-align: left;
   letter-spacing: 0.01em;
