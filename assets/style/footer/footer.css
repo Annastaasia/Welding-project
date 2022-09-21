@@ -1,13 +1,13 @@
 .footer{
-    font-family: 'Montserrat', sans-serif;
+    display: flex;
     margin-top: 5%;
-    max-width: 100vw;
+    max-width: 100%;
     height: 60vh;
     background-image:url("../../image/footer/fon.png");
     background-repeat: no-repeat;
     background-size: 100vw;
+    font-family: 'Montserrat', sans-serif;
     color:white;
-    display: flex;
 }
 .footer__container1{
     display: grid;
