@@ -2,8 +2,8 @@
     font-family: 'Montserrat', sans-serif;
 }
 .connection__h2{
-    padding-top:6%;
-    padding-left:30%;
+    padding-top:6vh;
+    text-align: center;
     font-size: 54px;
 }
 .connection__container {

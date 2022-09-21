@@ -2,8 +2,8 @@
     font-family: 'Montserrat', sans-serif;
 }
 .gallery__h2{
-    padding-top:6%;
-    padding-left:40%;
+    padding-top:6vh;
+    text-align: center;
     font-size: 54px;
 }
 .gallery__container{
