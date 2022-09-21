@@ -4,9 +4,10 @@
   justify-items: center;
 }
 .price h2 {
+  padding-top: 6vh;
   font-style: normal;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 54px;
   line-height: 96px;
   text-align: center;
   letter-spacing: 0.01em;
