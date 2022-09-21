@@ -1,7 +1,6 @@
 .price {
   font-family: "Montserrat";
   display: grid;
-  align-items: center;
   justify-items: center;
 }
 .price h2 {
@@ -15,6 +14,7 @@
 }
 .price__list {
   display: grid;
+  gap: 2%;
   padding: 0px 7% 0px 7%;
   grid-template-rows: repeat(12, 1fr);
   font-style: normal;
@@ -23,24 +23,27 @@
   line-height: 28px;
   letter-spacing: 0.01em;
 }
-.price__list .price__services {
-  display: grid;
-  grid-template-columns: 70% 30%;
+
+.price__list .price__name {
+  align-content: center;
   border-bottom: 0.5px solid rgba(0, 77, 97, 0.45);
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
 }
-.price__list .price__services .price__name {
-  align-self: center;
+
+.price__list .price__name:hover{
+  color: #000; 
+  -webkit-text-shadow: 3px 3px 3px #004D61;
+  -moz-text-shadow: 3px 3px 3px #004D61;
+      text-shadow: 3px 3px 3px #004D61;
 }
-.price__list .price__services .price__name .price__litletext {
+.price__list .price__name .price__litletext {
   font-size: 20px;
-}
-.price__list .price__services .price__value {
-  align-self: center;
-  justify-self: right;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 31px;
-  color: #004D61;
 }
 .price .price__button {
   display: grid;
