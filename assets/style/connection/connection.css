@@ -1,3 +1,4 @@
+@media screen and (min-width:451px) {
 .connection{
     font-family: 'Montserrat', sans-serif;
 }
@@ -53,6 +54,7 @@
     width: 100%;
     grid-column: 2/3;
     grid-row: 1/5;
+    border-radius: 10px;
   }
   .connection__button{
     margin-top: 2%;
@@ -89,4 +91,94 @@
 .connection__checkboxtext{
     font-size: 12px;
     color:#8d8d8d;
+}}
+
+@media screen and (max-width:450px) {
+  .connection{
+    font-family: 'Montserrat', sans-serif;
 }
+.connection__h2{
+    padding-top:6vh;
+    text-align: center;
+    font-size: 35px;
+}
+.connection__container {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 90vw;
+    grid-template-rows: 60px 60px 60px 188px 300px;
+    row-gap: 30px;
+    -moz-column-gap: 50px;
+    column-gap: 2vw;
+    font-size: 20px;
+  }
+  .connection__form1 {
+    padding-left: 30px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #004D61;
+    background: white;
+  }
+  .connection__form2 {
+    padding-left: 30px;
+    border-width: 2px;
+    border-color: #004D61;
+    border-radius: 10px;
+    background: white;
+  }
+  .connection__form3 {
+    padding-left: 30px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #004D61;
+    background: white;
+  }
+  .connection__form4 {
+    padding-left: 30px;
+    border-width: 2px;
+    border-color: #004D61;
+    border-radius: 10px;
+    background: white;
+  }
+  .connection__formimage {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .connection__button{
+    margin-top: 2%;
+    margin-left:7%;
+    width:250px;
+    height:60px;
+    color:white;
+    font-size: 24px;
+    font-weight: 600;
+    border-width: 0px;
+    border-radius: 12px;
+    background:#004D61
+    linear-gradient(-45deg, transparent calc(100%/3), rgba(244, 242, 242, 0.5), transparent calc(200%/3)) 
+    bottom right/350% 100% no-repeat;
+    transition: 0.5s linear;
+    cursor:pointer;
+    text-align:center;
+}
+.connection__button:hover{
+    background-position: bottom left;
+  }
+  
+.connection__container2{
+    display:grid;
+    grid-template-columns: 64vw 8vw 20vw;
+    grid-template-rows: 60px;
+
+}
+.connection__checkbox{
+    width: 16px;  
+    margin-left: 10px;  
+    margin-top: 10px;
+}
+.connection__checkboxtext{
+    font-size: 10px;
+    color:#8d8d8d;
+}}

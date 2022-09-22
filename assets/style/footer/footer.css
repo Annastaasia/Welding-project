@@ -1,3 +1,5 @@
+@media screen and (min-width:451px) {
+
 .footer{
     display: flex;
     margin-top: 5%;
@@ -90,4 +92,10 @@
 }
 .footer__container3__item3, .footer__container3__item4{
     font-size: 12px;
+}    
+}
+@media screen and (max-width:450px) {
+    .footer{
+        display:none;
+    }
 }
