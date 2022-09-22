@@ -4,8 +4,8 @@
 
 .mainpage{
     grid-area: mainpage;
-    background-image: url("../../image/mainpage/fon.png");
-    background-repeat: no-repeat;
+    background: url("../../image/mainpage/fon.png");
+    background-size: cover;
     width:100vw;
     height:88vh;
     font-family: 'Montserrat', sans-serif;
