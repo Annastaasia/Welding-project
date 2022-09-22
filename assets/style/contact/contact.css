@@ -1,0 +1,36 @@
+.contact{
+    font-family: 'Montserrat', sans-serif;
+}
+.contact__h2{
+    padding-top:6vh;
+    text-align: center;
+    font-size: 54px;
+}
+
+.contact__container {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 56% 44%;
+    column-gap: 1vw;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+.contact__track {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 120px 60px 60px 120px;
+    column-gap: 1vw;
+    row-gap: 30px;
+    align-items: center;
+    justify-items: start;
+}
+
+.contact__track__p {
+    text-decoration: overline;
+    font-weight: 500;
+    line-height: 38px;
+}

@@ -2,8 +2,8 @@
     font-family: 'Montserrat', sans-serif;
 }
 .connection__h2{
-    padding-top:57px;
-    padding-left:30%;
+    padding-top:6vh;
+    text-align: center;
     font-size: 54px;
 }
 .connection__container {
@@ -50,7 +50,7 @@
     background: white;
   }
   .connection__formimage {
-    width: 700px;
+    width: 50vw;
     grid-column: 2/3;
     grid-row: 1/5;
   }

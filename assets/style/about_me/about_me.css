@@ -1,15 +1,16 @@
 .about-me {
-  padding: 0px 7% 0px 7%;
+  padding: 0px 6vh 0px 7%;
   font-family: "Montserrat";
-  background: url(../../image/about_me/welding_fon.svg) no-repeat;
-  background-size: contain;
-  background-position-x: 53%;
+  background: url(../../image/about_me/welding_fon2.svg) no-repeat;
+  background-size: 35%;
+  background-position-x: 99%;
+  background-position-y: 113%;
 }
 .about-me__h1 {
   text-align: center;
   font-style: normal;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 54px;
   line-height: 96px;
   color: #000000;
 }
@@ -23,7 +24,7 @@
   
 }
 .about-me__block .about-me__text {
-  padding: 10%;
+  padding: 11%;
   font-weight: 400;
   font-size: 170%;
   line-height: 28px;
@@ -32,4 +33,15 @@
   color: #000000;
 }
 
+.about-me__block .about-me__text ul {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 50%;
+}
+.about-me__block .about-me__text ul li {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  width: 50vw ;
+  align-items: center;
+}
 /*# sourceMappingURL=about_me.css.map */
