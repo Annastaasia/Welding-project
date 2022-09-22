@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Argon_Service_Viseu</title>
-   <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/936/936831.png" type="image/png"> 
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/936/936831.png" type="image/png"> 
     <link rel="stylesheet" href="normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +34,7 @@
                     <li><a class="header__menu__nav__contact" href="#contact">Контакты</a></li>
                 </ul>  
             </nav>
-            <button class="header__button"><a class="header__button__a" aria-label="Whats App" href="https://wa.me/351920139641" target="_blank"><img alt="whats_app" src="./assets/image/header/whatsapp.svg"/>Whats App</a></button>
+            <button onClick=(newWindow()) class="header__button"><a class="header__button__a" aria-label="Whats App"><img alt="whats_app" src="./assets/image/header/whatsapp.svg"/>Whats App</a></button>
         </div>
     </header>
     <main>
@@ -64,7 +64,7 @@
     <section class="price" id="price">
         <h2>УСЛУГИ</h2>
         <div class="price__list">
-            <div class="price__name">Аргоновая сварка металлов
+            <div class="price__namebig">Аргоновая сварка металлов
                 <div class="price__litletext">(Алюминий, салюмин, титан, медь и ее сплавы, латунь, нержавейки) </div>
             </div>
             <div class="price__name">Сварка и ремонт промышленных баков</div>
@@ -115,7 +115,6 @@
                     <p class="connection__checkboxtext">Я соглашаюсь с использованием моих Персональных данных</p>
                 </div>
             </form>
-           
         </div>
     </section>
 
@@ -165,8 +164,15 @@
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script type="text/javascript">
+  function newWindow() {
+    window.open('https://wa.me/351920139641', '_blank');
+  }
+</script>
+  <script src="./assets/script/form.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript">
     $(document).ready(function(){
-    $("#footer, #header").on("click","a", function (event) {
+    $("#footer, #header, #mainpage").on("click","a", function (event) {
     event.preventDefault();
     var id = $(this).attr('href'),
     top = $(id).offset().top;
