@@ -1,3 +1,5 @@
+@media screen and (min-width:451px) {
+
 .gallery{
     font-family: 'Montserrat', sans-serif;
 }
@@ -17,7 +19,29 @@
 }
 .gallery__containeritem1, .gallery__containeritem2, .gallery__containeritem3, .gallery__containeritem4, .gallery__containeritem5, .gallery__containeritem6, .gallery__containeritem7, .gallery__containeritem8{
     max-width:100%;
-} 
-.gallery__containeritem1, .gallery__containeritem4{
-    
+}     
+}
+
+@media screen and (max-width:450px) {
+    .gallery{
+        font-family: 'Montserrat', sans-serif;
+    }
+    .gallery__h2{
+        padding-top:6vh;
+        text-align: center;
+        font-size: 35px;
+    }
+    .gallery__container{
+        display:grid;
+        height:1000px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 24% 24% 24% 24%;
+        row-gap: 1vh;
+        column-gap: 20px;
+        padding-left:5%;
+        padding-right: 5%;
+    }
+    .gallery__containeritem1, .gallery__containeritem2, .gallery__containeritem3, .gallery__containeritem4, .gallery__containeritem5, .gallery__containeritem6, .gallery__containeritem7, .gallery__containeritem8{
+        max-width:100%;
+    }     
 }
