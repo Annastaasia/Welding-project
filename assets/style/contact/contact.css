@@ -1,5 +1,9 @@
 @media screen and (min-width:451px) {
 
+.contact__container__mapmobil{
+    display: none;
+}
+
 .contact{
     font-family: 'Montserrat', sans-serif;
 }
@@ -24,7 +28,7 @@
 .contact__track {
     display: grid;
     grid-template-columns: 10% 90%;
-    grid-template-rows: 120px 60px 60px 120px;
+    grid-template-rows: 120px 60px 120px;
     column-gap: 1vw;
     row-gap: 30px;
     align-items: center;
@@ -39,7 +43,44 @@
 }
 
 @media screen and (max-width:450px) {
-    .contact__container {
+
+    .contact{
+        font-family: 'Montserrat', sans-serif;
+    }
+    .contact__container__map {
         display: none;
+    }
+
+    .contact__h2{
+        padding-top:6vh;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .contact__container {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 90vw;
+        grid-template-rows: 50% 50%;
+        row-gap: 30px;
+        column-gap: 2vw;
+        font-size: 20px;
+      }
+
+      .contact__track {
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-template-rows: 100px 60px 120px;
+        column-gap: 1vw;
+        row-gap: 1vh;
+        align-items: center;
+        justify-items: start;
+    }
+    
+    .contact__track__p {
+        font-weight: 500;
+        line-height: 38px;
     }
 }
