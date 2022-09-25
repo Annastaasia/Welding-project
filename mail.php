@@ -19,14 +19,8 @@ $mail->Password = '!1q2w3e4r5t'; // пароль от почты с которо
 $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
 
-$mail->setFrom('rudnevaketi@mail.ru'); // от кого будет уходить письмо?
-$mail->addAddress('gomudusu@p33.org');     // Кому будет уходить письмо
-//$mail->addAddress('ellen@example.com');               // Name is optional
-//$mail->addReplyTo('info@example.com', 'Information');
-//$mail->addCC('cc@example.com');
-//$mail->addBCC('bcc@example.com');
-//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+$mail->setFrom('rudnevaketi@mail.ru'); // от кого будет уходить письмо
+$mail->addAddress('mail@mail.com'); // куда будет уходить письмо
 $mail->isHTML(true);
 
 $mail->Subject = 'Заявка с Argon Service Viseu';
@@ -38,5 +32,4 @@ if (!$mail->send()) {
   echo 'Error';
 } else {
   echo ("<script>console.log('Спасибо!')</script>");
-  // header('location: thank-you.html');
 }
