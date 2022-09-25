@@ -20,9 +20,10 @@
     <link rel="stylesheet" href="./assets/style/price/price.css">
     <link rel="stylesheet" href="./assets/style/contact/contact.css">
     <link rel="stylesheet" href="./assets/style/foto_track/foto_track.css">
+    <link rel="stylesheet" href="./assets/style/popup/popup.css">
 </head>
 <body>
-    <header id="header">
+     <header id="header">
         <div class="header__menu">
             <div class="header__menu__logo"><img alt="logo" src="./assets/image/header/logo1.png"></div>
             <nav class="header__menu__nav">
@@ -115,9 +116,9 @@
         </div>
     </section>
     <section>
-        <div class="connection" id="connection">
+        <div class="connection">
             <h2 class="connection__h2" >ОСТАВИТЬ ЗАЯВКУ</h2> 
-            <form  id="connection" enctype="multipart/form-data" method="post">
+            <form  id="connection" enctype="multipart/form-data" action="mail.php" method="POST">
                 <div class="connection__container">
                 <input type="text" placeholder="Nome" name="name" class="connection__form1" minlength="2" maxlength="30" required pattern="[a-zA-Z]+$">
                 <input type="tel" maxlength="12" name="tel" placeholder="Número de telefone" class="connection__form2" required pattern="[ 0-9]+$">
@@ -132,6 +133,14 @@
                 </div>
                
             </form>
+            <div class="popup">
+              <div class="popup__container">
+                <button type="button" class="popup__close-button"></button>
+                  <div class="popup__form">
+                    <h2 class="popup__title">Спасибо!</h2>
+                  </div>
+              </div>
+            </div>
         </div>
     </section>
 
@@ -201,8 +210,8 @@
     </div>
 </footer>
 
-
-
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script type="text/javascript">
   function newWindow() {
     window.open('https://wa.me/351920139641', '_blank');
