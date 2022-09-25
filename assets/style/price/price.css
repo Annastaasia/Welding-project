@@ -1,5 +1,5 @@
 .price {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   display: grid;
   justify-items: center;
 }
@@ -39,9 +39,7 @@
 
 .price__list .price__name:hover{
   color: #000; 
-  -webkit-text-shadow: 3px 3px 3px #004D61;
-  -moz-text-shadow: 3px 3px 3px #004D61;
-      text-shadow: 3px 3px 3px #004D61;
+  border-bottom: 4px solid rgb(4, 40, 49);
 }
 .price__list .price__name .price__litletext {
   font-size: 20px;
@@ -72,3 +70,15 @@
       background-position: bottom left;
     }
 
+main .price .price__price {
+  margin: 2%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+}
+
+.price__list .price__name .price__namebig {
+  
+}
