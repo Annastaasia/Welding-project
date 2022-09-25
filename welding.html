@@ -20,9 +20,10 @@
     <link rel="stylesheet" href="./assets/style/price/price.css">
     <link rel="stylesheet" href="./assets/style/contact/contact.css">
     <link rel="stylesheet" href="./assets/style/foto_track/foto_track.css">
+    <link rel="stylesheet" href="./assets/style/popup/popup.css">
 </head>
 <body>
-    <header id="header">
+     <header id="header">
         <div class="header__menu">
             <div class="header__menu__logo"><img alt="logo" src="./assets/image/header/logo1.png"></div>
             <nav class="header__menu__nav">
@@ -58,9 +59,9 @@
         <div class="main_page">
         <div class="mainpage" id="mainpage">
             <h1 class="mainpage__h1">ARGON SERVICE VISEU</h1>
-            <p class="mainpage__text">Аргоновая сварка металлов в Визеу</p>
+            <p class="mainpage__text">Soldadura com metal de árgon</p>
             <p class="mainpage__number">+351-920-139-641</p>
-            <a href="#connection"><button class="mainpage__button">ОСТАВИТЬ ЗАЯВКУ</button></a>
+            <a href="#connection"><button class="mainpage__button">DEIXE UM PEDIDO</button></a>
         </div>
         </div>
     </section>
@@ -100,7 +101,7 @@
     </section>
     <section>
         <div class="gallery">
-            <h2 class="gallery__h2" id="gallery">ГАЛЕРЕЯ</h2>
+            <h2 class="gallery__h2" id="gallery">GALERIA</h2>
             <div class="gallery__container">
                 <video class="gallery__containeritem1"controls> <source src="./assets/image/gallery/1video.mp4" type='video/mp4' ></video>
                 <img src="./assets/image/gallery/5.jpg" alt="" class="gallery__containeritem3">
@@ -115,28 +116,38 @@
         </div>
     </section>
     <section>
-        <div class="connection" id="connection">
+        <div class="connection">
             <h2 class="connection__h2" >ОСТАВИТЬ ЗАЯВКУ</h2> 
-            <form  id="connection" enctype="multipart/form-data" method="post">
+            <form  id="connection" enctype="multipart/form-data" action="mail.php" method="POST">
                 <div class="connection__container">
-                <input type="text" placeholder="Имя" name="name" class="connection__form1" minlength="2" maxlength="30" required pattern="[a-zA-Z]+$">
-                <input type="tel" maxlength="12" name="tel" placeholder="Номер телефона" class="connection__form2" required pattern="[ 0-9]+$">
+                <input type="text" placeholder="Nome" name="name" class="connection__form1" minlength="2" maxlength="30" required pattern="[a-zA-Z]+$">
+                <input type="tel" maxlength="12" name="tel" placeholder="Número de telefone" class="connection__form2" required pattern="[ 0-9]+$">
                 <input type="email" placeholder="E-mail" name="email" class="connection__form3">
-                <input type="textarea" placeholder="Введите сообщение" name="comment" class="connection__form4" required>
+                <input type="textarea" placeholder="Digite sua mensagem" name="comment" class="connection__form4" required>
+                <div class="connection__container2">
+                    <input type="submit" value="MANDAR" class="connection__button">
+                    <input type="checkbox" required value="true" class="connection__checkbox">
+                    <p class="connection__checkboxtext">Concordo com o uso dos meus Dados Pessoais</p>
+                </div>
                 <img src="./assets/image/connection/form.png" alt="" class="connection__formimage">
                 </div>
-                <div class="connection__container2">
-                    <input type="submit" value="ОТПРАВИТЬ" class="connection__button">
-                    <input type="checkbox" required value="true" class="connection__checkbox">
-                    <p class="connection__checkboxtext">Я соглашаюсь с использованием моих Персональных данных</p>
-                </div>
+               
             </form>
+            <div class="popup">
+              <div class="popup__container">
+                <button type="button" class="popup__close-button"></button>
+                  <div class="popup__form">
+                    <h2 class="popup__title">Спасибо!</h2>
+                  </div>
+              </div>
+            </div>
         </div>
     </section>
 
     <section id="contact">
-        <div class="contact">
-            <h2 class="contact__h2">КОНТАКТЫ</h2>
+        <div class="connection">
+            <h2 class="connection__h2" >ОСТАВИТЬ ЗАЯВКУ</h2> 
+            <form  id="connection" enctype="multipart/form-data" action="mail.php" method="POST">
             <div class="contact__container">
                 <div class="contact__container__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.714279230785!2d-7.917325084862922!3d40.65822827933785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd23375c4a1a5193%3A0xe88327e28ec9d99a!2sArgon%20Service%20Viseu!5e0!3m2!1sru!2sru!4v1663795062864!5m2!1sru!2sru"  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                 
@@ -177,35 +188,47 @@
     <div class="footer" id="footer">
         <div class="footer__container1">
             <img src="./assets/image/footer/logo.png" alt="" class="footer__container1__item1">
-            <a href="#mainpage" class="footer__container1__item2">Главная</a>
-            <a href="#aboutme" class="footer__container1__item3">Обо мне</a>
-            <a href="#price"  class="footer__container1__item4">Услуги</a>
-            <a href="#gallery" class="footer__container1__item5">Галерея</a>
-            <a href="#contact" class="footer__container1__item7">Контакты</a>
+            <a href="#mainpage" class="footer__container1__item2">Início</a>
+            <a href="#aboutme" class="footer__container1__item3">Sobre mim</a>
+            <a href="#price"  class="footer__container1__item4">Serviços</a>
+            <a href="#gallery" class="footer__container1__item5">Galeria</a>
+            <a href="#contact" class="footer__container1__item7"> Contacto</a>
         </div>
         <div class="footer__container2">
             <p class="footer__container2__item1">+351-920-139-641</p>
-            <a href="#" class="footer__container2__item2"><img src="./assets/image/footer/icon1.png" alt="" ></a>
-            <a href="https://www.instagram.com/argon_service_viseu/"  class="footer__container2__item3"><img src="./assets/image/footer/icon2.png" alt=""></a>
-            <a href="https://www.tiktok.com/@argon_service_viseu?is_from_webapp=1&sender_device=pc" class="footer__container2__item4"><img src="./assets/image/footer/icon3.png" alt="" ></a>
+            <a href="https://wa.me/351920139641" class="footer__container2__item2" onClick=(newWindow())><img src="./assets/image/footer/icon1.png" alt="" ></a>
+            <a href="https://www.instagram.com/argon_service_viseu/"  class="footer__container2__item3" onClick=(newWindow1())><img src="./assets/image/footer/icon2.png" alt=""></a>
+            <a href="https://www.tiktok.com/@argon_service_viseu?is_from_webapp=1&sender_device=pc" class="footer__container2__item4" onClick=(newWindow2())><img src="./assets/image/footer/icon3.png" alt="" ></a>
         </div>
         <div class="footer__container3">
             <p class="footer__container3__item1">2022.</p>
-            <p class="footer__container3__item2">© Все права защищены.</p>
-            <a href="https://www.flaticon.com/ru/free-icons/" title=" иконки" class="footer__container3__item3"> иконки от Chanut-is-Industries - Flaticon</a>
-            <a href="https://www.flaticon.com/free-icons/welding" title="welding icons" class="footer__container3__item4">Welding icons created by Freepik - Flaticon</a>
-            <a href="https://www.flaticon.com/ru/free-icons/-" title="выпадающее меню иконки">Выпадающее меню иконки от Smashicons - Flaticon</a>
+            <p class="footer__container3__item2">© Todos os direitos reservados.</p>
+            <a href="https://www.flaticon.com/ru/free-icons/" title=" иконки" class="footer__container3__item3"> ícones por Chanut-is-Industries - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/welding" title="welding icons" class="footer__container3__item4">Ícones de soldagem criados por Freepik - Flaticon</a>
+            <a href="https://www.flaticon.com/ru/free-icons/-" title="выпадающее меню иконки" class="footer__container3__item5">Menu de ícones suspensos por Smashicons - Flaticon</a>
         </div>
     </div>
 </footer>
 
-
-
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script type="text/javascript">
   function newWindow() {
     window.open('https://wa.me/351920139641', '_blank');
   }
 </script>
+
+<script type="text/javascript">
+    function newWindow1() {
+      window.open('https://www.instagram.com/argon_service_viseu/', '_blank');
+    }
+  </script>
+
+<script type="text/javascript">
+    function newWindow2() {
+    window.open('https://www.tiktok.com/@argon_service_viseu?is_from_webapp=1&sender_device=pc', '_blank');
+    }
+  </script>
   <script src="./assets/script/form.js"></script>
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
