@@ -36,7 +36,7 @@
     background-position-x: 110%;
     background-position-y: 65%;
   }
-  
+ 
   .about-me__block .about-me__text ul {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -82,7 +82,8 @@
   
 }
 .about-me__block .about-me__text {
-  padding: 10% 0% 0% 3%;
+  padding: 10% 0% 0% 0%;
+  max-width: 90%;
   font-weight: 400;
   font-size: 170%;
   line-height: 28px;
