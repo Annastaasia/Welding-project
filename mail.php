@@ -14,13 +14,13 @@ $comment = $_POST['comment'];
 $mail->isSMTP();
 $mail->Host = 'smtp.mail.ru';
 $mail->SMTPAuth = true;
-$mail->Username = 'rudnevaketi@mail.ru'; // логин от почты с которой будут отправляться письма
-$mail->Password = '!1q2w3e4r5t'; // пароль от почты с которой будут отправляться письма
+$mail->Username = 'argon_service_viseu@mail.ru'; // логин от почты с которой будут отправляться письма
+$mail->Password = 'a_Rg_on/service332'; // пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
 
-$mail->setFrom('rudnevaketi@mail.ru'); // от кого будет уходить письмо
-$mail->addAddress('mail@mail.com'); // куда будет уходить письмо
+$mail->setFrom('argon_service_viseu@mail.ru'); // от кого будет уходить письмо
+$mail->addAddress('143318@mail.ru'); // куда будет уходить письмо
 $mail->isHTML(true);
 
 $mail->Subject = 'Заявка с Argon Service Viseu';
