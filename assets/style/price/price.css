@@ -1,3 +1,87 @@
+@media screen and (max-width:450px){
+.price {
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  justify-items: center;
+}
+.price h2 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 250%;
+  line-height: 250%;
+  color: #000000;
+}
+.price__list {
+  display: grid;
+  gap: 2%;
+  padding: 0px 7% 0px 7%;
+  grid-template-rows: repeat(12, 1fr);
+  font-weight: 400;
+    font-size: 100%;
+    line-height: 100%;
+    text-align: left;
+    letter-spacing: 0.01em;
+}
+
+.price__list .price__name {
+  align-content: center;
+  border-bottom: 0.5px solid rgba(0, 77, 97, 0.45);
+  font-weight: 400;
+    font-size: 100%;
+    line-height: 100%;
+    text-align: left;
+    letter-spacing: 0.01em;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.price__list .price__name:hover{
+  color: #000; 
+  border-bottom: 4px solid rgb(4, 40, 49);
+}
+.price__list .price__name .price__litletext {
+  font-size: 70%;
+}
+.price .price__button {
+  display: grid;
+  margin-top: 2%;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr ;
+  align-items: center;
+  justify-items: center;
+      width:230px;
+      height:70px;
+      font-size: 24px;
+      font-weight: 600;
+      color:white;
+      border-width: 0px;
+      border-radius: 12px;
+      background:#004D61
+      linear-gradient(-45deg, transparent calc(100%/2), rgba(244, 242, 242, 0.5), transparent calc(200%/3)) 
+      bottom right/350% 100% no-repeat;
+      transition: 0.5s linear;
+      cursor:pointer;
+      text-align:center;
+  }
+  
+.price .price__button:hover {
+      background-position: bottom left;
+    }
+
+main .price .price__price {
+  margin: 2%;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 100%;
+  text-align: left;
+  letter-spacing: 0.01em;
+}
+
+}
+
+@media screen and (min-width: 451px){
 .price {
   font-family: "Montserrat", sans-serif;
   display: grid;
@@ -72,13 +156,11 @@
 
 main .price .price__price {
   margin: 2%;
-  font-style: normal;
   font-weight: 400;
-  font-size: 29px;
-  line-height: 28px;
+  font-size: 100%;
+  line-height: 100%;
+  text-align: left;
   letter-spacing: 0.01em;
 }
 
-.price__list .price__name .price__namebig {
-  
 }
