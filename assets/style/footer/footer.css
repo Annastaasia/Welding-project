@@ -13,8 +13,8 @@
 }
 .footer__container1{
     display: grid;
-    grid-template-columns: 80% 40%;
-    grid-template-rows: repeat(6,10%);
+    grid-template-columns: 80% 50%;
+    grid-template-rows: repeat(7,10%);
     padding-left: 7%;
     padding-top: 7%;
     font-size:18px;
@@ -57,9 +57,14 @@
     padding:0;
     
 }
-.footer__container1__item7{
+.footer__container1__item6{
     grid-column: 2/3;
     grid-row:5/6;
+    padding:0;
+}
+.footer__container1__item7{
+    grid-column: 2/3;
+    grid-row:6/7;
     padding:0;
     
 }
