@@ -8,7 +8,7 @@
         font-family: 'Montserrat', sans-serif;
     }
     .foto_track__h2{
-        padding-top:6vh;
+        padding-top: 6vh;
         text-align: center;
         font-size: 54px;
     }
@@ -45,7 +45,7 @@
             font-family: 'Montserrat', sans-serif;
         }
         .foto_track__h2{
-            padding-top:6vh;
+            padding-top: 2vh;
             text-align: center;
             font-size: 35px;
         }
@@ -62,17 +62,16 @@
 
         .foto_track__container2 {
             display:grid;
-            height:100vh;
+            height:110vh;
             grid-template-columns: 98%;
-            grid-template-rows: 50%;
-            row-gap: 10vh;
+            row-gap: 5vh;
             padding-left:5%;
             padding-right: 5%;
             padding-top: 6vh;
         }
 
         .foto_track__p{
-            padding-top: 14vh;
+            padding-top: 6vh;
             text-align: center;
             font-size: 30px;
             font-weight: 500;
@@ -81,5 +80,6 @@
 
         .gallery__foto_trackitem1, .gallery__foto_trackitem2, .gallery__foto_trackitem3, .gallery__foto_trackitem4, .gallery__foto_trackitem5{
             max-width:100%;
+            max-height: 100%;
         }     
     }
