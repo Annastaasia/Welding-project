@@ -31,5 +31,5 @@ $mail->AltBody = '';
 if (!$mail->send()) {
   echo 'Error';
 } else {
-  echo ("<script>console.log('Спасибо!')</script>");
+  echo ("<script>console.log('Obrigado!')</script>");
 }
