@@ -1,19 +1,21 @@
 @media screen and (min-width:451px) {
 
-    .foto_track__p{
+    .foto_track__p {
         display: none;
     }
 
-    .foto_track{
+    .foto_track {
         font-family: 'Montserrat', sans-serif;
     }
-    .foto_track__h2{
+
+    .foto_track__h2 {
         padding-top: 6vh;
         text-align: center;
         font-size: 54px;
     }
-    .foto_track__container1{
-        display:grid;
+
+    .foto_track__container1 {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         column-gap: 6vh;
@@ -21,8 +23,8 @@
         padding-right: 100px;
     }
 
-    .foto_track__container2{
-        display:grid;
+    .foto_track__container2 {
+        display: grid;
         justify-content: space-evenly;
         grid-template-columns: 35% 35%;
         grid-template-rows: 35%;
@@ -34,52 +36,60 @@
 
 
 
-    .gallery__foto_trackitem1, .gallery__foto_trackitem2, .gallery__foto_trackitem3, .gallery__foto_trackitem4, .gallery__foto_trackitem5{
-        max-width:100%;
-    }     
+    .gallery__foto_trackitem1,
+    .gallery__foto_trackitem2,
+    .gallery__foto_trackitem3,
+    .gallery__foto_trackitem4,
+    .gallery__foto_trackitem5 {
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    .foto_track {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .foto_track__h2 {
+        padding-top: 2vh;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .foto_track__container1 {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 98%;
+        row-gap: 6vh;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .foto_track__container2 {
+        display: grid;
+        height: 110vh;
+        grid-template-columns: 98%;
+        row-gap: 5vh;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 6vh;
+    }
+
+    .foto_track__p {
+        padding-top: 6vh;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
     }
 
 
-    @media screen and (max-width:450px) {
-        .foto_track{
-            font-family: 'Montserrat', sans-serif;
-        }
-        .foto_track__h2{
-            padding-top: 2vh;
-            text-align: center;
-            font-size: 35px;
-        }
-
-        .foto_track__container1 {
-            display:grid;
-            height:100%;
-            grid-template-columns: 98%;
-            grid-template-rows: 30%;
-            row-gap: 6vh;
-            padding-left:5%;
-            padding-right: 5%;
-        }
-
-        .foto_track__container2 {
-            display:grid;
-            height:110vh;
-            grid-template-columns: 98%;
-            row-gap: 5vh;
-            padding-left:5%;
-            padding-right: 5%;
-            padding-top: 6vh;
-        }
-
-        .foto_track__p{
-            padding-top: 6vh;
-            text-align: center;
-            font-size: 30px;
-            font-weight: 500;
-        }
-
-
-        .gallery__foto_trackitem1, .gallery__foto_trackitem2, .gallery__foto_trackitem3, .gallery__foto_trackitem4, .gallery__foto_trackitem5{
-            max-width:100%;
-            max-height: 100%;
-        }     
+    .gallery__foto_trackitem1,
+    .gallery__foto_trackitem2,
+    .gallery__foto_trackitem3,
+    .gallery__foto_trackitem4,
+    .gallery__foto_trackitem5 {
+        max-width: 100%;
+        max-height: 100%;
     }
+}
